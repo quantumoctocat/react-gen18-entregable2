@@ -1,0 +1,12 @@
+.dataW_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataW {
+    padding: 20px;
+    box-shadow: 0 0 5px gray;
+}
