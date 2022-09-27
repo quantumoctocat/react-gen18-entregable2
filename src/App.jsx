@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios"
 import './App.css'
+import Temperature from "./components/Temperature"
 
 function App() {
   const [lat, setLat] = useState(0)
@@ -39,6 +40,7 @@ function App() {
       <div className="dataW">
         <h1>{place}</h1>
         <h2>{Math.floor(temperature)}ºC - {Math.floor((temperature * 9 / 5) + 32)}ºF</h2>
+        <Temperature celsius={temperature}></Temperature>
         <h2>{weather}</h2>
         <h3><a href="https://github.com/quantumoctocat/react-gen18-entregable2"><strong>--- Code at GitHub ---</strong></a></h3>
       </div>
